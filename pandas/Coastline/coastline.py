@@ -22,8 +22,8 @@ def Agro(n):
 df['Agriculture']=df['Agriculture'].apply(Agro)
 print(df[df['Coastline (coast/area ratio)']==True]['Agriculture'].mean())
 print(df.groupby(by='Coastline (coast/area ratio)')['GDP ($ per capita)'].agg(['min','max','mean']))
-'''df.plot(x = 'Agriculture', y = 'GDP ($ per capita)', kind = 'scatter')
-plt.show()'''
+df.plot(x = 'Agriculture', y = 'GDP ($ per capita)', kind = 'scatter')
+plt.show()
 df['Infant mortality (per 1000 births)']
 df.plot(x = 'Infant mortality (per 1000 births)', y = 'Pop. Density (per sq. mi.)', kind = 'scatter')
 plt.show()

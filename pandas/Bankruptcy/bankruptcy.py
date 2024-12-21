@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score
-df = pd.read_csv("pandas\Bankruptcy\data.csv")
+df = pd.read_csv("pandas/Bankruptcy/data.csv")
 print(df['Bankrupt?'].value_counts())
 
 X = df.drop('Bankrupt?', axis = 1) 

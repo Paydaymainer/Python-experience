@@ -1,6 +1,6 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
-df = pd.read_csv("pandas\Coastline\countries_of_the_world.csv")
+df = pd.read_csv("pandas/Coastline/countries_of_the_world.csv")
 df=df.dropna()
 def Coast(n):
     n = n.replace(',','.')

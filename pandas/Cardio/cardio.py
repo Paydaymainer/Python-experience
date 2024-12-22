@@ -9,7 +9,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 #import libraries we will use
 
 
-heart_failure_data = pd.read_csv("pandas\Cardio\heart_failure_clinical_records_dataset.csv")#process the file using pandas
+heart_failure_data = pd.read_csv("pandas/Cardio/heart_failure_clinical_records_dataset.csv")#process the file using pandas
 print(heart_failure_data.head())#display the first and last columns
 
 agg_data = heart_failure_data.groupby(['age', 'DEATH_EVENT'], as_index=False).ejection_fraction.count()#grouping by age, show the number of deaths at a given age, counting the number of participants with this age

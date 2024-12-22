@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt 
-df = pd.read_csv("pandas\Job\DataAnalyst.csv")
+df = pd.read_csv("pandas/Job/DataAnalyst.csv")
 print(df['Salary Estimate'].value_counts())
 def format(n):
   if n!='-1':
